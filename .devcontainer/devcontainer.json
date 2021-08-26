@@ -1,0 +1,16 @@
+{
+    "name": "Clojure",
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service": "vscode",
+    "runServices": ["vscode"],
+    "shutdownAction": "stopCompose",
+    "postCreateCommand": "",
+    "workspaceFolder": "/workspace",
+    // "overrideCommand": "",
+    "extensions": [
+        "betterthantomorrow.calva",
+    ],
+    "settings": { 
+		"calva.clojureLspPath": "/usr/local/bin/clojure-lsp",
+    }
+}
